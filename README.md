@@ -26,3 +26,10 @@
 
 <img src="https://github.com/harsh6768/aws-lambda-studious/blob/master/Images/Screenshot%20from%202020-01-20%2011-07-02.png" alt="">
  
+ 6. Now we need to create IAM Role that will define the permissions of the Lambda function.
+   Go to IAM Dashboard and select Role from the left Navigation and then click create Role .
+ 
+ 7. After clicking the create Role button. Select AWS service which will use this role. In our case we are using Lambda functions ,therefore select Lambda .
+ 
+ <img src="https://github.com/harsh6768/aws-lambda-studious/blob/master/Images/Screenshot%20from%202020-01-20%2011-07-02.png" alt="">
+ 
