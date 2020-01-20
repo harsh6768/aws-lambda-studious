@@ -22,5 +22,7 @@
  
   <img src="https://github.com/harsh6768/aws-lambda-studious/blob/master/Images/Screenshot%20from%202020-01-20%2011-06-10.png" alt="">
  
+5. After creating the s3 bucket .Go to lambda dashboard and click add Trigger option and select s3 as trigger.Select the bucket name from the Bucket option and also select event type which will handle when to be lambda function called.
 
+<img src="https://github.com/harsh6768/aws-lambda-studious/blob/master/Images/Screenshot%20from%202020-01-20%2011-07-02.png" alt="">
  
