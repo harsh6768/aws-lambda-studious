@@ -49,4 +49,37 @@
  
    <img src="https://github.com/harsh6768/aws-lambda-studious/blob/master/Images/Screenshot%20from%202020-01-25%2018-20-44.png" alt="">
  
+ 12. This lambda used to fetch the data of files everytime any files added to the S3 bucket.
+ 
+         const AWS=require("aws-sdk");
+
+         AWS.config.update({ 
+             accessKeyId: "",   //add access key
+             secretAccessKey: "",  //add secret key
+             region: "us-east-1",
+         });
+
+          // const s3=new AWS.S3();
+         exports.handler = async (event, context,callback) => {
+
+            let bucketName =event.Records[0].s3.bucket.name;
+            let filename = event.Records[0].s3.object.key;
+            // let filename='Screenshot from 2020-01-16 11-47-00.png'
+            console.log("bucketName ===>",bucketName);
+            console.log("fileName ==>",filename);
+            const s3 = new AWS.S3({
+                params: { Bucket: bucketName}
+            });
+            let params = { Bucket: bucketName, Key: filename };
+            console.log("Params ===>>>>",params);
+
+            const data = await s3.getObject(params).promise();
+
+            const response = {
+                statusCode: 200,
+                body: data.body.toString(),
+            };
+            console.log("DATA ====>",response);
+  
+         };
  
