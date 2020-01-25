@@ -31,5 +31,14 @@
  
  7. After clicking the create Role button. Select AWS service which will use this role. In our case we are using Lambda functions ,therefore select Lambda .
  
- <img src="https://github.com/harsh6768/aws-lambda-studious/blob/master/Images/Screenshot%20from%202020-01-20%2011-07-02.png" alt="">
+ <img src="https://github.com/harsh6768/aws-lambda-studious/blob/master/Images/Screenshot%20from%202020-01-20%2011-24-55.png" alt="">
+ 
+ 8. search s3 all access and cloud watch all logs policies and checked and click on preview button
+ 
+  <img src="https://github.com/harsh6768/aws-lambda-studious/blob/master/Images/Screenshot%20from%202020-01-25%2017-50-08.png" alt="">
+  
+ 9. Provide name to the IAM role and here you can see the policies you have granted to this role.
+ 
+   <img src="https://github.com/harsh6768/aws-lambda-studious/blob/master/Images/Screenshot%20from%202020-01-25%2017-50-35.png" alt="">
+ 
  
