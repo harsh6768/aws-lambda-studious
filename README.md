@@ -47,6 +47,6 @@
    
  11. Now click add trigger button and search for CloudWatchEvents and add to it.
  
-   <img src="https://github.com/harsh6768/aws-lambda-studious/blob/master/Images/Screenshot%20from%202020-01-25%2017-50-35.png" alt="">
+   <img src="https://github.com/harsh6768/aws-lambda-studious/blob/master/Images/Screenshot%20from%202020-01-25%2018-20-44.png" alt="">
  
  
