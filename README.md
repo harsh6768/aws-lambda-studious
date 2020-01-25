@@ -3,6 +3,8 @@
 
 # aws-lambda-studious
 
+#### 1. How to use Lambda functions to get the data of Files that added in S3 Bucket.
+
 1. Click Create Function After going to Lambda Dashboard.
 
  <img src="https://github.com/harsh6768/aws-lambda-studious/blob/master/Images/Screenshot%20from%202020-01-20%2010-50-41.png" alt="">
@@ -87,4 +89,11 @@
    13 Go to Cloud Watch dashboard and select log groups from logs and then select lambda functions for logs. You can see log that will call everytime lambda function get triggered.
    
    <img src="https://github.com/harsh6768/aws-lambda-studious/blob/master/Images/Screenshot%20from%202020-01-25%2018-34-05.png" alt="">
+   
+ 
+ 
+ ### 2. How to create Layer :
+     
+   We use layer to use npm libraries which are not provided as a built in libraries inside lambda functions.
+    
  
