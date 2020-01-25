@@ -40,5 +40,13 @@
  9. Provide name to the IAM role and here you can see the policies you have granted to this role.
  
    <img src="https://github.com/harsh6768/aws-lambda-studious/blob/master/Images/Screenshot%20from%202020-01-25%2017-50-35.png" alt="">
+   
+ 10. Select Use an existin role from Execution Role section and then select IAM ROLE that you have created previously.
+ 
+   <img src="https://github.com/harsh6768/aws-lambda-studious/blob/master/Images/Screenshot%20from%202020-01-25%2018-20-34.png" alt="">
+   
+ 11. Now click add trigger button and search for CloudWatchEvents and add to it.
+ 
+   <img src="https://github.com/harsh6768/aws-lambda-studious/blob/master/Images/Screenshot%20from%202020-01-25%2017-50-35.png" alt="">
  
  
