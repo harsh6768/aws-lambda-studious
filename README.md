@@ -95,5 +95,11 @@
  ### 2. How to create Layer :
      
    We use layer to use npm libraries which are not provided as a built in libraries inside lambda functions.
+   
+   1. Make directory with name nodejs(name is specific) then go to console
+   2. npm init -y   generate package.json file
+   3. install npm module which you need for lambda functions 
+   4. make zip of nodejs folder
+   5. 
     
  
