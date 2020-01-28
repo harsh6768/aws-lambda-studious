@@ -100,6 +100,15 @@
    2. npm init -y   generate package.json file
    3. install npm module which you need for lambda functions 
    4. make zip of nodejs folder
-   5. 
+   5. Go to Lambda console and click Layer from top left list  and click create Layer
+     
+<img src="https://github.com/harsh6768/aws-lambda-studious/blob/master/Images/Screenshot%20from%202020-01-28%2016-16-56.png" alt="">
+  
+  6. Give the name to the Lambda Layer and import the zip file
+  
+
+<img src="https://github.com/harsh6768/aws-lambda-studious/blob/master/Images/Screenshot%20from%202020-01-28%2016-17-22.png" alt="">
+ 
+ 
     
  
