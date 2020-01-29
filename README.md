@@ -109,6 +109,11 @@
 
 <img src="https://github.com/harsh6768/aws-lambda-studious/blob/master/Images/Screenshot%20from%202020-01-28%2016-17-22.png" alt="">
  
+ 7. Now you can require any library in your lambda functions that you have added in lambda layers
+ 
+
+#### 3. How to call one lambda functions to another
+
  
     
  
