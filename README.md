@@ -114,6 +114,9 @@
 
 #### 3. How to invoke one lambda function to another lambda function
 
+ 1. Make IAM Rule with awslambdarole 
+ 
+<img src="https://github.com/harsh6768/aws-lambda-studious/blob/master/Images/Screenshot%20from%202020-01-30%2011-41-44.png" alt="">
  
     
  
