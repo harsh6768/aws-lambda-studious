@@ -119,7 +119,16 @@
 <img src="https://github.com/harsh6768/aws-lambda-studious/blob/master/Images/Screenshot%20from%202020-01-30%2011-41-44.png" alt="">
 
  2. Create 2 Lambda function and assign the iam rule that you have created earlier.
- 3. function_1 lambda function will invoke the lambda function_2 with InvokationType:RequestResponse
+ 3. We can invoke lambda function with different InvokationType.
+   
+    There are 2 type of InvokationType:
+    1. Event
+    2. RequestResponse
+
+    1. Using InvokationType:RequestResponse
+       In this type of invokation function_1 invoke the function_2 and send some payload ,then function_2 will do some operation,after that function_2 send response back to function_1.
+    
+      a. function_1 lambda function will invoke the lambda function_2 with InvokationType:RequestResponse
  
 
         var AWS = require('aws-sdk');
@@ -145,14 +154,14 @@
         })
         };
         
- 4. function_2 will recieve the payload that we have sent using the function_1 .We will some operation and after that we      will return some value as a response.
+      b. function_2 will recieve the payload that we have sent using the function_1 .We will some operation and after that          we will return some value as a response.
  
         exports.handler = function(event, context) {
 
            console.log('Lambda function_2 Received event:', JSON.stringify(event, null, 2));
 
            context.succeed('Hello ' + event.name);  // it will return the value to the function_1
-      };
+        };
 
     
  
