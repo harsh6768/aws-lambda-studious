@@ -117,6 +117,42 @@
  1. Make IAM Rule with awslambdarole 
  
 <img src="https://github.com/harsh6768/aws-lambda-studious/blob/master/Images/Screenshot%20from%202020-01-30%2011-41-44.png" alt="">
+
+ 2. Create 2 Lambda function and assign the iam rule that you have created earlier.
+ 3. function_1 lambda function will invoke the lambda function_2 with InvokationType:RequestResponse
  
+
+        var AWS = require('aws-sdk');
+        // AWS.config.region = 'us-east-1';
+        var lambda = new AWS.Lambda({
+          region:'us-east-1'
+        });
+
+        exports.handler = function(event, context) {
+          var params = {
+            FunctionName: 'function_2', // the lambda function we are going to invoke
+            InvocationType: 'RequestResponse',
+            LogType: 'Tail',
+            Payload:' { "name" : "harsh chaurasiya "}'
+          };
+
+        lambda.invoke(params,(err, data)=>{
+          if (err) {
+            context.fail(err);
+          } else {
+            context.succeed('function_2 said '+ data.Payload);
+          }
+        })
+        };
+        
+ 4. function_2 will recieve the payload that we have sent using the function_1 .We will some operation and after that we      will return some value as a response.
+ 
+        exports.handler = function(event, context) {
+
+           console.log('Lambda function_2 Received event:', JSON.stringify(event, null, 2));
+
+           context.succeed('Hello ' + event.name);  // it will return the value to the function_1
+      };
+
     
  
