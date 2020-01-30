@@ -112,7 +112,7 @@
  7. Now you can require any library in your lambda functions that you have added in lambda layers
  
 
-#### 3. How to call one lambda functions to another
+#### 3. How to invoke one lambda function to another lambda function
 
  
     
